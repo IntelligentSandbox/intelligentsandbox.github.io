@@ -1,122 +1,217 @@
 <!DOCTYPE html>
 <!-- Design reference: https://walzr.com, https://peterdpong.com -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IntelligentSandbox</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <header>
-    <div class="header-content">
-      <div class="header-top">
-        <img src="assets/images/logo.png" alt="Logo" class="logo">
-        <h1><a class="main-title" href="https://github.com/IntelligentSandbox" target="_blank" rel="noopener noreferrer">IntelligentSandbox</a></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntelligentSandbox</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="header-top">
+          <img src="assets/images/logo.png" alt="Logo" class="logo" />
+          <h1>
+            <a
+              class="main-title"
+              href="https://github.com/IntelligentSandbox"
+              target="_blank"
+              rel="noopener noreferrer"
+              >IntelligentSandbox</a
+            >
+          </h1>
+        </div>
+        <p>
+          A sandbox for various projects and experiments across the AI space.
+        </p>
       </div>
-      <p>A sandbox for various projects and experiments across the AI space.</p>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <h2 class="section-title">Projects</h2>
+    <main>
+      <h2 class="section-title">Projects</h2>
 
-    <!-- 2025 -->
-    <div class="year-group">
-      <h3 class="year">2025</h3>
-      <div class="projects">
-        <a class="project" href="https://github.com/IntelligentSandbox/gmail-rag" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/gmail-rag.png" alt="Gmail RAG">
+      <!-- 2025 -->
+      <div class="year-group">
+        <h3 class="year">2025</h3>
+        <div class="projects">
+          <a
+            class="project"
+            href="https://github.com/IntelligentSandbox/gmail-rag"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/gmail-rag.png" alt="Gmail RAG" />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Gmail RAG</h3>
+                <p class="project-desc">
+                  A RAG-based application for querying and searching Gmail
+                  messages.
+                </p>
+              </div>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Gmail RAG</h3>
-              <p class="project-desc">A RAG-based application for querying and searching Gmail messages.</p>
+          </a>
+          <a
+            class="project"
+            href="https://github.com/changminbark/golms"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/golms.png" alt="golms" />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">golms</h3>
+                <p class="project-desc">
+                  A CLI tool for managing and chatting with local LLM models
+                  across different model servers.
+                </p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a class="project" href="https://github.com/changminbark/golms" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/golms.png" alt="golms">
+          </a>
+          <a
+            class="project"
+            href="https://github.com/IntelligentSandbox/piper-tts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/piper-tts.gif" alt="Piper TTS" />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Piper TTS</h3>
+                <p class="project-desc">
+                  A FastAPI-based library for local, high-speed neural
+                  text-to-speech synthesis.
+                </p>
+              </div>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">golms</h3>
-              <p class="project-desc">A CLI tool for managing and chatting with local LLM models across different model servers.</p>
+          </a>
+          <a
+            class="project"
+            href="https://github.com/IntelligentSandbox/autovia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/autovia.png"
+                  alt="Autovia"
+                  class="center"
+                />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Autovia</h3>
+                <p class="project-desc">
+                  A web application for semantic segmentation of road scenes
+                  using the CityScapes dataset.
+                </p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a class="project" href="https://github.com/IntelligentSandbox/piper-tts" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/piper-tts.gif" alt="Piper TTS">
+          </a>
+          <a
+            class="project"
+            href="https://github.com/IntelligentSandbox/tic-tac-ai"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/tic-tac-ai.png"
+                  alt="Tic-Tac-AI"
+                  class="center"
+                />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Tic-Tac-AI</h3>
+                <p class="project-desc">
+                  A command-line tic-tac-toe game in C++ with an AI opponent
+                  using the minimax algorithm.
+                </p>
+              </div>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Piper TTS</h3>
-              <p class="project-desc">A FastAPI-based library for local, high-speed neural text-to-speech synthesis.</p>
-            </div>
-          </div>
-        </a>
-        <a class="project" href="https://github.com/IntelligentSandbox/autovia" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/autovia.png" alt="Autovia" class="center">
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Autovia</h3>
-              <p class="project-desc">A web application for semantic segmentation of road scenes using the CityScapes dataset.</p>
-            </div>
-          </div>
-        </a>
-        <a class="project" href="https://github.com/IntelligentSandbox/tic-tac-ai" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/tic-tac-ai.png" alt="Tic-Tac-AI" class="center">
-            </div>
-            <div class="project-info">
-              <h3 class="project-title">Tic-Tac-AI</h3>
-              <p class="project-desc">A command-line tic-tac-toe game in C++ with an AI opponent using the minimax algorithm.</p>
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- 2023 -->
-    <div class="year-group">
-      <h3 class="year">2023</h3>
-      <div class="projects">
-        <a class="project" href="https://github.com/IntelligentSandbox/andnet" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/andnet.png" alt="andnet">
+      <!-- 2023 -->
+      <div class="year-group">
+        <h3 class="year">2023</h3>
+        <div class="projects">
+          <a
+            class="project"
+            href="https://github.com/IntelligentSandbox/mastermind_game"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/mastermind.png" alt="Mastermind Game" />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Mastermind Game</h3>
+                <p class="project-desc">
+                  A Java-based Mastermind game with random, minimax, and DFS
+                  algorithms for code-breaking challenges.
+                </p>
+              </div>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">andnet</h3>
-              <p class="project-desc">A neural network visualization for learning AND logic gate using Raylib.</p>
+          </a>
+          <a
+            class="project"
+            href="https://github.com/IntelligentSandbox/andnet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/andnet.png" alt="andnet" />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">andnet</h3>
+                <p class="project-desc">
+                  A neural network visualization for learning AND logic gate
+                  using Raylib.
+                </p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a class="project" href="https://github.com/IntelligentSandbox/kurt" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/kurt.png" alt="Kurt" class="center">
+          </a>
+          <a
+            class="project"
+            href="https://github.com/IntelligentSandbox/kurt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/kurt.png" alt="Kurt" class="center" />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Kurt</h3>
+                <p class="project-desc">
+                  An AI assistant with face detection and speech recognition.
+                </p>
+              </div>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Kurt</h3>
-              <p class="project-desc">An AI assistant with face detection and speech recognition.</p>
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- PROJECT CARD TEMPLATE
+      <!-- PROJECT CARD TEMPLATE
     <a class="project" href="PROJECT_URL" target="_blank" rel="noopener noreferrer">
       <article class="project-card">
         <div class="project-image">
@@ -128,10 +223,8 @@
         </div>
       </article>
     </a>
-    -->
+    --></main>
 
-  </main>
-
-  <footer class="copyright">&copy; 2026 IntelligentSandbox</footer>
-</body>
+    <footer class="copyright">&copy; 2026 IntelligentSandbox</footer>
+  </body>
 </html>
