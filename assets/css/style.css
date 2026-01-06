@@ -1,0 +1,202 @@
+/* Design reference: https://walzr.com, https://peterdpong.com */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  letter-spacing: -0.3px;
+}
+
+/* Header */
+header {
+  padding: 40px;
+  margin-bottom: 10px;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+}
+
+/* Projects */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.year-group {
+  margin-bottom: 30px;
+}
+
+.year {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 15px 0;
+}
+
+.year::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.project {
+  width: calc(50% - 20px);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.project:hover .project-card {
+  transform: translateY(-4px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.project-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 12px 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 4px 0;
+}
+
+.project-desc {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Copyright */
+.copyright {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: #ccc;
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 30px 20px;
+  }
+
+  main {
+    padding: 0 20px 60px;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header p {
+    font-size: 0.9375rem;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}
